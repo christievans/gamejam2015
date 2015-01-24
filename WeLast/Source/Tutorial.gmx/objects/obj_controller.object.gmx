@@ -31,18 +31,12 @@ global.sink = 0;
 global.sink_total = 0;
 t = 0;
 
+global.shouldSpawnIceberg = false;
+ 
 //Create Event of Object: ObjServer
-var Type , Port , MaxClients;
- Type = network_socket_tcp;
- Port = 64198;
- MaxClients = 32;
- Server = network_create_server( Type , Port , MaxClients );
-var Size , Type , Alignment;
- Size = 1024;
- Type = buffer_fixed;
- Alignment = 1;
- Buffer = buffer_create( Size , Type , Alignment );
- SocketList = ds_list_create(); 
+   Server = network_create_server( network_socket_tcp , 63258 , 32 );
+   Buffer = buffer_create( 1024 , buffer_fixed , 1 );
+   SocketList = ds_list_create();
 </string>
           </argument>
         </arguments>
@@ -287,6 +281,8 @@ if (instance_exists(obj_paddle) == true)
 if (instance_exists(obj_bucket) == true)
     obj_bucket.y += offset;
 
+if (global.shouldSpawnIceberg == true) 
+    instance_create(-100, 330, obj_iceburg);
 </string>
           </argument>
         </arguments>
@@ -390,6 +386,8 @@ switch( type_event ) {
  var socket = ds_map_find_value( async_load , "id" );
  buffer_seek( buffer , buffer_seek_start , 0 );
  ReceivedPacket( buffer , socket );
+ show_message("hi");
+ global.shouldSpawnIceberg = true;
  break;
 }
 </string>
@@ -444,6 +442,7 @@ ds_list_destroy( SocketList );
 draw_text(50,80,"Velocity: "+string(global.vel));
 draw_text(50,100,"Sink: "+string(global.sink));
 draw_text(50,120,"Sink Total: "+string(global.sink_total));
+draw_text(50, 130, "should spawn iceberg: " + string(global.shouldSpawnIceberg));
 </string>
           </argument>
         </arguments>
