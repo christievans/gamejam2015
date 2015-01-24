@@ -386,7 +386,6 @@ switch( type_event ) {
  var socket = ds_map_find_value( async_load , "id" );
  buffer_seek( buffer , buffer_seek_start , 0 );
  ReceivedPacket( buffer , socket );
- show_message("hi");
  global.shouldSpawnIceberg = true;
  break;
 }
