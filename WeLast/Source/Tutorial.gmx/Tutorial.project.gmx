@@ -40,11 +40,13 @@
     <sprites name="Level 2">
       <sprite>sprites\spr_lv2_boat</sprite>
       <sprite>sprites\spr_lv2_player</sprite>
-      <sprite>sprites\spr_floor</sprite>
+      <sprite>sprites\spr_lv2_windows</sprite>
+      <sprite>sprites\spr_lv2_ladder</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_sea</background>
+    <background>background\bk_ship</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -71,11 +73,13 @@
       <object>objects\obj_gun_control</object>
       <object>objects\obj_oars_control</object>
       <object>objects\obj_explosion</object>
+      <object>objects\obj_player2</object>
     </objects>
-    <objects name="Level2">
+    <objects name="Level 2">
       <object>objects\obj_lv2_boat</object>
       <object>objects\obj_lv2_player</object>
-      <object>objects\obj_floor</object>
+      <object>objects\obj_lv2_window</object>
+      <object>objects\obj_lv2_ladder</object>
     </objects>
   </objects>
   <rooms name="rooms">
