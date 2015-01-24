@@ -4,7 +4,15 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_iceberg_spawn</sound>
+    <sound>sound\snd_bullet</sound>
+    <sound>sound\snd_bucket</sound>
+    <sound>sound\snd_iceberg_hitship</sound>
+    <sound>sound\snd_oars</sound>
+    <sound>sound\snd_background1</sound>
+    <sound>sound\snd_oh_no</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_cloud</sprite>
     <sprite>sprites\spr_wave</sprite>
@@ -19,11 +27,15 @@
     <sprite>sprites\spr_bucket_water</sprite>
     <sprite>sprites\spr_bucket_water_done</sprite>
     <sprite>sprites\spr_iceburg</sprite>
+    <sprite>sprites\spr_game_over</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_sea</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_cloud</object>
     <object>objects\obj_controller</object>
@@ -36,6 +48,7 @@
     <object>objects\obj_paddle</object>
     <object>objects\obj_bucket</object>
     <object>objects\obj_iceburg</object>
+    <object>objects\obj_game_over</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level1</room>

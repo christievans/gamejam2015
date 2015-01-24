@@ -85,6 +85,8 @@ if (keyboard_check_pressed(ord('W')) and prep == true)
     
     if(global.vel &lt; 30)
         global.vel += 1;
+    if not sound_isplaying(snd_oars)    
+        audio_play_sound(snd_oars,0,false);
 }
     
 </string>
