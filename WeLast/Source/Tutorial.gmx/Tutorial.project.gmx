@@ -36,6 +36,17 @@
       <sprite>sprites\spr_bucket_control</sprite>
       <sprite>sprites\spr_gun_control</sprite>
       <sprite>sprites\spr_oars_control</sprite>
+      <sprites name="iceberg">
+        <sprite>sprites\sprite24</sprite>
+        <sprite>sprites\sprite25</sprite>
+        <sprite>sprites\sprite26</sprite>
+        <sprite>sprites\sprite27</sprite>
+        <sprite>sprites\sprite28</sprite>
+        <sprite>sprites\sprite29</sprite>
+        <sprite>sprites\sprite30</sprite>
+        <sprite>sprites\sprite31</sprite>
+        <sprite>sprites\sprite32</sprite>
+      </sprites>
     </sprites>
     <sprites name="Level 2">
       <sprite>sprites\spr_lv2_boat</sprite>
@@ -76,6 +87,7 @@
       <object>objects\obj_iceburg</object>
       <object>objects\obj_explosion</object>
       <object>objects\obj_controller12</object>
+      <object>objects\obj_iceberg_2</object>
     </objects>
     <objects name="Level13">
       <object>objects\obj_bucket_control</object>
@@ -91,9 +103,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Level13</room>
     <room>rooms\Level12</room>
     <room>rooms\Level11</room>
+    <room>rooms\Level13</room>
     <room>rooms\Level2</room>
   </rooms>
   <help>
