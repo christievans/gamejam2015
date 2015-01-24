@@ -16,7 +16,7 @@
     <sound>sound\snd_fail</sound>
   </sounds>
   <sprites name="sprites">
-    <sprites name="Level 1">
+    <sprites name="Level 11">
       <sprite>sprites\spr_bucket_water_done</sprite>
       <sprite>sprites\spr_bucket_water</sprite>
       <sprite>sprites\spr_paddle_right</sprite>
@@ -54,27 +54,33 @@
     <script>scripts\ReceivedPacket.gml</script>
   </scripts>
   <objects name="objects">
-    <objects name="Level 1">
+    <objects name="Level 11">
       <object>objects\obj_island</object>
       <object>objects\obj_boat_wave2</object>
-      <object>objects\obj_gun</object>
-      <object>objects\obj_bullet</object>
       <object>objects\obj_game_over</object>
       <object>objects\obj_cloud</object>
       <object>objects\obj_wave</object>
-      <object>objects\obj_bucket</object>
       <object>objects\obj_boat</object>
-      <object>objects\obj_controller</object>
       <object>objects\obj_player</object>
       <object>objects\obj_paddle</object>
-      <object>objects\obj_iceburg</object>
       <object>objects\obj_you_win</object>
       <object>objects\obj_boatwave</object>
-      <object>objects\obj_bucket_control</object>
-      <object>objects\obj_gun_control</object>
       <object>objects\obj_oars_control</object>
-      <object>objects\obj_explosion</object>
       <object>objects\obj_player2</object>
+      <object>objects\obj_controller11</object>
+    </objects>
+    <objects name="Level12">
+      <object>objects\obj_gun</object>
+      <object>objects\obj_bullet</object>
+      <object>objects\obj_gun_control</object>
+      <object>objects\obj_iceburg</object>
+      <object>objects\obj_explosion</object>
+      <object>objects\obj_controller12</object>
+    </objects>
+    <objects name="Level13">
+      <object>objects\obj_bucket_control</object>
+      <object>objects\obj_bucket</object>
+      <object>objects\obj_controller13</object>
     </objects>
     <objects name="Level 2">
       <object>objects\obj_lv2_boat</object>
@@ -85,8 +91,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Level13</room>
+    <room>rooms\Level12</room>
+    <room>rooms\Level11</room>
     <room>rooms\Level2</room>
-    <room>rooms\Level1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
