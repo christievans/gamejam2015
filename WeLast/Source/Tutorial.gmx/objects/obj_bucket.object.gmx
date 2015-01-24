@@ -75,6 +75,8 @@
             <string>if (self.y &gt; 550)
 {
     instance_destroy();
+    
+    if( not instance_exists(obj_you_win))
     instance_create(512,160,obj_game_over);
 }
 </string>
