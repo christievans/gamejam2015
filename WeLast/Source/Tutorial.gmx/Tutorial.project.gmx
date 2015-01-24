@@ -37,6 +37,9 @@
       <sprite>sprites\spr_gun_control</sprite>
       <sprite>sprites\spr_oars_control</sprite>
     </sprites>
+    <sprites name="Level 2">
+      <sprite>sprites\spr_lv2_boat</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_sea</background>
@@ -64,9 +67,14 @@
       <object>objects\obj_oars_control</object>
       <object>objects\obj_explosion</object>
     </objects>
+    <objects name="Level2">
+      <object>objects\obj_lv2_boat</object>
+      <object>objects\obj_lv2_player</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level1</room>
+    <room>rooms\Level2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
