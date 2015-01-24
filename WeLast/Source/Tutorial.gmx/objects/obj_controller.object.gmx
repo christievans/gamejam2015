@@ -31,6 +31,18 @@ global.sink = 0;
 global.sink_total = 0;
 t = 0;
 
+//Create Event of Object: ObjServer
+var Type , Port , MaxClients;
+ Type = network_socket_tcp;
+ Port = 64198;
+ MaxClients = 32;
+ Server = network_create_server( Type , Port , MaxClients );
+var Size , Type , Alignment;
+ Size = 1024;
+ Type = buffer_fixed;
+ Alignment = 1;
+ Buffer = buffer_create( Size , Type , Alignment );
+ SocketList = ds_list_create(); 
 </string>
           </argument>
         </arguments>
@@ -80,30 +92,6 @@ t = 0;
           <argument>
             <kind>4</kind>
             <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>random(30)+300</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
           </argument>
         </arguments>
       </action>
@@ -361,6 +349,75 @@ if (instance_exists(obj_bucket) == true)
           <argument>
             <kind>1</kind>
             <string>global.vel += 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="68">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Async Networking Event of Object: ObjServer
+var type_event = ds_map_find_value( async_load , "type" );
+switch( type_event ) {
+ case network_type_connect:
+ var socket = ds_map_find_value( async_load , "socket" );
+ ds_list_add( SocketList , socket );
+ break;
+ case network_type_disconnect:
+ var socket = ds_map_find_value( async_load , "socket" );
+ var findsocket = ds_list_find_index( SocketList , socket );
+ if ( findsocket &gt;= 0 ) {
+ ds_list_delete( SocketList , findsocket );
+ }
+ break;
+ case network_type_data:
+ var buffer = ds_map_find_value( async_load , "buffer" );
+ var socket = ds_map_find_value( async_load , "id" );
+ buffer_seek( buffer , buffer_seek_start , 0 );
+ ReceivedPacket( buffer , socket );
+ break;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Game End Event of Object: ObjServer
+network_destroy( Server );
+buffer_delete( Buffer );
+ds_list_destroy( SocketList ); 
 </string>
           </argument>
         </arguments>

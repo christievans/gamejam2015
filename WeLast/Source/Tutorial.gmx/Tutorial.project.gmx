@@ -33,6 +33,9 @@
     <background>background\bk_sea</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\ReceivedPacket.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
   </fonts>
