@@ -12,43 +12,58 @@
     <sound>sound\snd_oars</sound>
     <sound>sound\snd_background1</sound>
     <sound>sound\snd_oh_no</sound>
+    <sound>sound\snd_we_safe</sound>
+    <sound>sound\snd_fail</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_cloud</sprite>
-    <sprite>sprites\spr_wave</sprite>
-    <sprite>sprites\spr_boat</sprite>
-    <sprite>sprites\spr_boat_wave</sprite>
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_gun</sprite>
-    <sprite>sprites\spr_bullet</sprite>
-    <sprite>sprites\spr_paddle_right</sprite>
-    <sprite>sprites\spr_paddle_left</sprite>
-    <sprite>sprites\spr_bucket_still</sprite>
-    <sprite>sprites\spr_bucket_water</sprite>
-    <sprite>sprites\spr_bucket_water_done</sprite>
-    <sprite>sprites\spr_iceburg</sprite>
-    <sprite>sprites\spr_game_over</sprite>
+    <sprites name="Level 1">
+      <sprite>sprites\spr_bucket_water_done</sprite>
+      <sprite>sprites\spr_bucket_water</sprite>
+      <sprite>sprites\spr_paddle_right</sprite>
+      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_bullet</sprite>
+      <sprite>sprites\spr_boat_wave</sprite>
+      <sprite>sprites\spr_boat</sprite>
+      <sprite>sprites\spr_gun</sprite>
+      <sprite>sprites\spr_wave</sprite>
+      <sprite>sprites\spr_paddle_left</sprite>
+      <sprite>sprites\spr_bucket_still</sprite>
+      <sprite>sprites\spr_cloud</sprite>
+      <sprite>sprites\spr_island</sprite>
+      <sprite>sprites\spr_you_win</sprite>
+      <sprite>sprites\spr_game_over</sprite>
+      <sprite>sprites\spr_iceburg</sprite>
+      <sprite>sprites\spr_bucket_control</sprite>
+      <sprite>sprites\spr_gun_control</sprite>
+      <sprite>sprites\spr_oars_control</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_sea</background>
   </backgrounds>
   <paths name="paths"/>
-  <fonts name="fonts">
-    <font>fonts\font0</font>
-  </fonts>
   <objects name="objects">
-    <object>objects\obj_cloud</object>
-    <object>objects\obj_controller</object>
-    <object>objects\obj_wave</object>
-    <object>objects\obj_boat</object>
-    <object>objects\obj_boatwave</object>
-    <object>objects\obj_player</object>
-    <object>objects\obj_gun</object>
-    <object>objects\obj_bullet</object>
-    <object>objects\obj_paddle</object>
-    <object>objects\obj_bucket</object>
-    <object>objects\obj_iceburg</object>
-    <object>objects\obj_game_over</object>
+    <objects name="Level 1">
+      <object>objects\obj_island</object>
+      <object>objects\obj_boat_wave2</object>
+      <object>objects\obj_gun</object>
+      <object>objects\obj_bullet</object>
+      <object>objects\obj_game_over</object>
+      <object>objects\obj_cloud</object>
+      <object>objects\obj_wave</object>
+      <object>objects\obj_bucket</object>
+      <object>objects\obj_boat</object>
+      <object>objects\obj_controller</object>
+      <object>objects\obj_player</object>
+      <object>objects\obj_paddle</object>
+      <object>objects\obj_iceburg</object>
+      <object>objects\obj_you_win</object>
+      <object>objects\obj_boatwave</object>
+      <object>objects\obj_bucket_control</object>
+      <object>objects\obj_gun_control</object>
+      <object>objects\obj_oars_control</object>
+      <object>objects\obj_explosion</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level1</room>
