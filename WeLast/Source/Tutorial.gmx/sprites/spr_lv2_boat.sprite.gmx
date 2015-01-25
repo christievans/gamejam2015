@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>193</bbox_left>
-  <bbox_right>3806</bbox_right>
-  <bbox_top>139</bbox_top>
-  <bbox_bottom>2134</bbox_bottom>
+  <bbox_left>11</bbox_left>
+  <bbox_right>1819</bbox_right>
+  <bbox_top>1</bbox_top>
+  <bbox_bottom>999</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>4000</width>
-  <height>2250</height>
+  <width>1830</width>
+  <height>1010</height>
   <frames>
     <frame index="0">images\spr_lv2_boat_0.png</frame>
   </frames>

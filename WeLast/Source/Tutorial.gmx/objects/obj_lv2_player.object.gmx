@@ -3,7 +3,7 @@
   <spriteName>spr_lv2_player</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -86,7 +86,7 @@ ladder = false;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_floor">
+    <event eventtype="4" ename="obj_lv2_floor">
       <action>
         <libid>1</libid>
         <id>603</id>

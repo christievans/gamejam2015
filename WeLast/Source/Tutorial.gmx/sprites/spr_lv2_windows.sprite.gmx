@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>215</bbox_left>
-  <bbox_right>2265</bbox_right>
-  <bbox_top>139</bbox_top>
-  <bbox_bottom>1152</bbox_bottom>
+  <bbox_left>365</bbox_left>
+  <bbox_right>775</bbox_right>
+  <bbox_top>1</bbox_top>
+  <bbox_bottom>368</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>4000</width>
-  <height>2250</height>
+  <width>1830</width>
+  <height>1010</height>
   <frames>
     <frame index="0">images\spr_lv2_windows_0.png</frame>
   </frames>

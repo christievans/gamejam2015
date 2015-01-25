@@ -49,11 +49,13 @@
       </sprites>
     </sprites>
     <sprites name="Level 2">
-      <sprite>sprites\spr_lv2_boat</sprite>
       <sprite>sprites\spr_lv2_player</sprite>
       <sprite>sprites\spr_lv2_windows</sprite>
+      <sprite>sprites\spr_lv2_boat</sprite>
       <sprite>sprites\spr_lv2_ladder</sprite>
       <sprite>sprites\spr_floor</sprite>
+      <sprite>sprites\spr_lv2_shipback</sprite>
+      <sprite>sprites\spr_lv2_noncollision</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -95,17 +97,19 @@
     </objects>
     <objects name="Level 2">
       <object>objects\obj_lv2_boat</object>
-      <object>objects\obj_lv2_player</object>
       <object>objects\obj_lv2_window</object>
       <object>objects\obj_lv2_ladder</object>
-      <object>objects\obj_floor</object>
+      <object>objects\obj_lv2_noncol</object>
+      <object>objects\obj_lv2_shipback</object>
+      <object>objects\obj_lv2_floor</object>
+      <object>objects\obj_lv2_player</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Level2</room>
     <room>rooms\Level13</room>
     <room>rooms\Level12</room>
     <room>rooms\Level11</room>
-    <room>rooms\Level2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

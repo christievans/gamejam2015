@@ -3,22 +3,22 @@
   <type>0</type>
   <xorig>0</xorig>
   <yorigin>0</yorigin>
-  <colkind>0</colkind>
+  <colkind>1</colkind>
   <coltolerance>0</coltolerance>
-  <sepmasks>-1</sepmasks>
+  <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>1441</bbox_left>
-  <bbox_right>2473</bbox_right>
-  <bbox_top>788</bbox_top>
-  <bbox_bottom>2028</bbox_bottom>
+  <bbox_left>636</bbox_left>
+  <bbox_right>1152</bbox_right>
+  <bbox_top>255</bbox_top>
+  <bbox_bottom>945</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>4000</width>
-  <height>2250</height>
+  <width>1830</width>
+  <height>1010</height>
   <frames>
     <frame index="0">images\spr_lv2_ladder_0.png</frame>
   </frames>
