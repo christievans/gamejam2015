@@ -31,6 +31,7 @@ global.offset = 0;
 
 t = 0;
 
+//if there is no server, become server
 if (instance_exists(ServerClient) == false){
     instance_create(0, 0, ServerClient);
 }
@@ -39,6 +40,9 @@ if((global.isServer &amp;&amp; ds_list_size(ServerClient.SocketList) &gt; 0) || 
     p2 = instance_create(2242,990,obj_lv2_player);
     p2.isServerPlayer = false;
 }
+
+if(global.isServer == true)
+    alarm[1] = random(150) + 150;
 </string>
           </argument>
         </arguments>
@@ -67,81 +71,31 @@ if((global.isServer &amp;&amp; ds_list_size(ServerClient.SocketList) &gt; 0) || 
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>random(150)+150</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
-        <id>201</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>10</kind>
-            <object>obj_lv2_narwhal</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-200</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1150 + random(500)</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>random(150)+150</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>if ( not instance_exists(obj_island) &amp;&amp; global.isServer == true)
+{
+    instance_create(-200,1150,obj_lv2_narwhal);
+    alarm[1] = random(150) + 600;
+    send(ids.NARWHAL,-200,1150 + random(500))
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -198,6 +152,20 @@ if((global.isServer &amp;&amp; ds_list_size(ServerClient.SocketList) &gt; 0) || 
             <string>0</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>113</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_reverse_xdir</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="3" enumb="0">

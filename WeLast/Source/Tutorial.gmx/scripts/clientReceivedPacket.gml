@@ -27,6 +27,11 @@ switch( msgid ) {
     instance_create(icex,icey, obj_iceberg_2);
     //instance_create(-100,300,obj_iceberg_2);
  break;
+ case ids.NARWHAL:
+    narx = buffer_read(buffer, buffer_s32);
+    nary = buffer_read(buffer, buffer_s32);
+    instance_create(narx, nary, obj_lv2_narwhal);
+ break;
  case ids.ACTION:
     clientReceivedAction();
     //room_goto_next();
