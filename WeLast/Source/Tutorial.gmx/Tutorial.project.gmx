@@ -39,6 +39,8 @@
     </sprites>
     <sprites name="Level 2">
       <sprite>sprites\spr_lv2_boat</sprite>
+      <sprite>sprites\spr_lv2_player</sprite>
+      <sprite>sprites\spr_floor</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -73,11 +75,12 @@
     <objects name="Level2">
       <object>objects\obj_lv2_boat</object>
       <object>objects\obj_lv2_player</object>
+      <object>objects\obj_floor</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Level1</room>
     <room>rooms\Level2</room>
+    <room>rooms\Level1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
