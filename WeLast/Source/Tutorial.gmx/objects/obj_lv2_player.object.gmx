@@ -3,9 +3,9 @@
   <spriteName>spr_lv2_player</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-5</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_lv2_ShipParent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -60,17 +60,20 @@
    { 
    gravity = 0; 
    gravity_direction = 270;
-    } //the arrow keys&lt;,&gt;,^
+    } 
     
      
      
-     if place_free(x-4,y) and keyboard_check(vk_left)
+     if place_free(x-10,y) and keyboard_check(vk_left)
      {
-     x-=10
+     x -= 10;
+     sprite_index = spr_lv2_player;
      } 
      
-     if place_free(x+4,y)and keyboard_check(vk_right)
-     {x+=10
+     if place_free(x+10,y)and keyboard_check(vk_right)
+     {
+     x += 10;
+     sprite_index = spr_lv2_player_right;
      } 
      
      if !place_free(x,y+1) and keyboard_check(vk_up)
@@ -81,6 +84,30 @@
 
 ladder = false;
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_lv2_pump">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>move_contact_solid(direction,12);
+ hspeed=0;
 </string>
           </argument>
         </arguments>

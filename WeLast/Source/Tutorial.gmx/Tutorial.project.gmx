@@ -19,13 +19,13 @@
     <sprites name="Level 11">
       <sprite>sprites\spr_bucket_water_done</sprite>
       <sprite>sprites\spr_bucket_water</sprite>
-      <sprite>sprites\spr_paddle_right</sprite>
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_bullet</sprite>
       <sprite>sprites\spr_boat_wave</sprite>
       <sprite>sprites\spr_boat</sprite>
       <sprite>sprites\spr_gun</sprite>
       <sprite>sprites\spr_wave</sprite>
+      <sprite>sprites\spr_paddle_right</sprite>
       <sprite>sprites\spr_paddle_left</sprite>
       <sprite>sprites\spr_bucket_still</sprite>
       <sprite>sprites\spr_cloud</sprite>
@@ -50,7 +50,7 @@
     </sprites>
     <sprites name="Level 2">
       <sprite>sprites\spr_lv2_player</sprite>
-      <sprite>sprites\spr_lv2_player2</sprite>
+      <sprite>sprites\spr_lv2_player_right</sprite>
       <sprite>sprites\spr_lv2_windows</sprite>
       <sprite>sprites\spr_lv2_boat</sprite>
       <sprite>sprites\spr_lv2_ladder</sprite>
@@ -61,6 +61,11 @@
       <sprite>sprites\spr_lv2_engine</sprite>
       <sprite>sprites\spr_lv2_fishgrinder</sprite>
       <sprite>sprites\spr_lv2_pump</sprite>
+      <sprite>sprites\spr_lv2_vpipe</sprite>
+      <sprite>sprites\spr_lv2_pipe_water</sprite>
+      <sprite>sprites\spr_lv2_fish</sprite>
+      <sprite>sprites\spr_narwhal</sprite>
+      <sprite>sprites\spr_lv2_oceanTrans</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -107,6 +112,8 @@
       <object>objects\obj_controller13</object>
     </objects>
     <objects name="Level 2">
+      <object>objects\obj_lv2_controller</object>
+      <object>objects\obj_lv2_ShipParent</object>
       <object>objects\obj_lv2_boat</object>
       <object>objects\obj_lv2_window</object>
       <object>objects\obj_lv2_ladder</object>
@@ -117,14 +124,21 @@
       <object>objects\obj_lv2_fishnet</object>
       <object>objects\obj_lv2_engine</object>
       <object>objects\obj_lv2_fishgrinder</object>
+      <object>objects\obj_lv2_pump</object>
+      <object>objects\obj_lv2_vpipe</object>
+      <object>objects\obj_lv2_pipe_water</object>
+      <object>objects\obj_lv2_oceanTrans</object>
+      <object>objects\obj_lv2_fish</object>
+      <object>objects\obj_lv2_narwhal</object>
+      <object>objects\obj_lv2_cloud</object>
     </objects>
     <object>objects\ServerClient</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level2</room>
-    <room>rooms\Level13</room>
-    <room>rooms\Level12</room>
     <room>rooms\Level11</room>
+    <room>rooms\Level12</room>
+    <room>rooms\Level13</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
