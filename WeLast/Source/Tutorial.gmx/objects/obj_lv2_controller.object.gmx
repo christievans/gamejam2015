@@ -215,9 +215,11 @@ if (global.dist &gt; 2000 and not instance_exists(obj_island) and not instance_e
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50,60,"Distance: "+string(global.dist));
+            <string>/*
+draw_text(50,60,"Distance: "+string(global.dist));
 draw_text(50,80,"Velocity: "+string(global.vel));
 draw_text(50,100,"Sink: "+string(global.offset));
+*/
 </string>
           </argument>
         </arguments>
