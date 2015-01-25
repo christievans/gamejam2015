@@ -28,6 +28,7 @@
             <string>global.vel = 30;
 global.dist = 0;
 global.offset = 0;
+global.sink_rate = -100*1/30;
 
 t = 0;
 
@@ -91,7 +92,7 @@ if(global.isServer == true)
             <kind>1</kind>
             <string>if ( not instance_exists(obj_island) &amp;&amp; global.isServer == true)
 {
-    instance_create(-200,1150,obj_lv2_narwhal);
+    instance_create(-200,1450,obj_lv2_narwhal);
     alarm[1] = random(150) + 600;
     send(ids.NARWHAL,-200,1150 + random(500))
 }
@@ -117,7 +118,7 @@ if(global.isServer == true)
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>-100</object>
+            <object>obj_lv2_fish</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -153,20 +154,6 @@ if(global.isServer == true)
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>113</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_reverse_xdir</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -186,11 +173,26 @@ if(global.isServer == true)
           <argument>
             <kind>1</kind>
             <string>t += 1/30;
-global.dist += global.vel*t;
-global.offset = 50*sin(0.5*t);
+
+global.dist += global.vel*t*.01;
+global.offset = 50*sin(0.5*t) + global.sink_rate*t + global.pump_push*5;
 
 if (global.vel &gt; 0)
     global.vel -= 0.1;
+    
+if global.offset &lt; -150
+    global.lockdown = true;
+else
+    global.lockdown = false;
+
+    
+if global.offset &lt; -350
+    instance_create(obj_lv2_player.x,obj_lv2_player.y-150,obj_game_over);
+    
+    
+if (global.dist &gt; 2000 and not instance_exists(obj_island) and not instance_exists(obj_game_over))
+    instance_create(-290,1400,obj_island);
+    
 </string>
           </argument>
         </arguments>

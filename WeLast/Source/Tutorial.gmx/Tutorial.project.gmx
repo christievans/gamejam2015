@@ -60,6 +60,11 @@
       <sprite>sprites\spr_narwhal</sprite>
       <sprite>sprites\spr_lv2_oceanTrans</sprite>
       <sprite>sprites\sprite45</sprite>
+      <sprite>sprites\spr_bottom_door</sprite>
+      <sprite>sprites\spr_lv2_disable</sprite>
+      <sprite>sprites\spr_lv2_launcher</sprite>
+      <sprite>sprites\spr_lv2_missile</sprite>
+      <sprite>sprites\spr_lv2_fish_belt</sprite>
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\spr_menu</sprite>
@@ -73,7 +78,9 @@
   <backgrounds name="background">
     <background>background\bk_sea</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_missile</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\clientAsync.gml</script>
     <script>scripts\clientReceivedPacket.gml</script>
@@ -138,6 +145,11 @@
       <object>objects\obj_lv2_narwhal</object>
       <object>objects\obj_lv2_cloud</object>
       <object>objects\obj_camera_dummy</object>
+      <object>objects\obj_bottom_door</object>
+      <object>objects\obj_lv2_disable</object>
+      <object>objects\obj_lv2_launcher</object>
+      <object>objects\obj_lv2_missile</object>
+      <object>objects\obj_lv2_fish_belt</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_menu</object>
