@@ -28,6 +28,7 @@
             <string>global.vel = 30;
 global.dist = 0;
 global.offset = 0;
+global.sink_rate = -100*1/30.0;
 
 t = 0;
 
@@ -117,7 +118,7 @@ if((global.isServer &amp;&amp; ds_list_size(ServerClient.SocketList) &gt; 0) || 
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1150 + random(500)</string>
+            <string>1450</string>
           </argument>
         </arguments>
       </action>
@@ -217,12 +218,28 @@ if((global.isServer &amp;&amp; ds_list_size(ServerClient.SocketList) &gt; 0) || 
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>t += 1/30;
+            <string>global.sink_rate = -100*1/30.0;
+
+
+t += 1/30;
 global.dist += global.vel*t;
-global.offset = 50*sin(0.5*t);
+global.offset = 50*sin(0.5*t) + global.sink_rate*t + 5*global.pump_push;
 
 if (global.vel &gt; 0)
     global.vel -= 0.1;
+    
+if (global.offset &lt; -150)
+{
+    obj_bottom_door.solid = true;
+    obj_bottom_door.visible = true;
+    global.lockdown = true;
+}
+else
+{
+    obj_bottom_door.solid = false;
+    obj_bottom_door.visible = false;
+    global.lockdown = false;
+}
 </string>
           </argument>
         </arguments>
@@ -247,7 +264,8 @@ if (global.vel &gt; 0)
             <kind>1</kind>
             <string>draw_text(50,60,"Distance: "+string(global.dist));
 draw_text(50,80,"Velocity: "+string(global.vel));
-draw_text(50,100,"Sink: "+string(global.offset));
+draw_text(50,100,"Offset: "+string(global.offset));
+draw_text(50,120,"Sink Rate: "+string(global.sink_rate));
 </string>
           </argument>
         </arguments>

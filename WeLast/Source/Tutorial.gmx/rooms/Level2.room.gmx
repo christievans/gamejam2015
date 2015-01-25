@@ -73,6 +73,10 @@
     <instance objName="obj_lv2_cloud" x="2702" y="520" name="inst_F755489F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lv2_cloud" x="1712" y="460" name="inst_3C735752" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_camera_dummy" x="64" y="0" name="inst_3BC64732" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bottom_door" x="2708" y="1524" name="inst_A3009BC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lv2_disable" x="3030" y="1548" name="inst_1EBF02D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lv2_disable" x="2268" y="1550" name="inst_0FA0A83F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lv2_pipe_water" x="3454" y="1024" name="inst_B037BE87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
