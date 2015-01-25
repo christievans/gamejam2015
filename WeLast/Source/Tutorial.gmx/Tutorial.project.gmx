@@ -113,6 +113,7 @@
       <object>objects\obj_lv2_player</object>
       <object>objects\obj_lv2_fishnet</object>
     </objects>
+    <object>objects\ServerClient</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level2</room>
