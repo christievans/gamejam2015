@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>52</bbox_left>
-  <bbox_right>220</bbox_right>
-  <bbox_top>54</bbox_top>
-  <bbox_bottom>110</bbox_bottom>
+  <bbox_left>0</bbox_left>
+  <bbox_right>205</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>100</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>300</width>
-  <height>150</height>
+  <width>206</width>
+  <height>101</height>
   <frames>
     <frame index="0">images\spr_gun_0.png</frame>
   </frames>

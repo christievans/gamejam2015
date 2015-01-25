@@ -3,7 +3,7 @@
   <spriteName>spr_player</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (self.x &lt; 800)
+            <string>if (self.x &lt; 750)
 {
     self.x += 5;
 }
@@ -52,7 +52,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (self.x &gt; 500)
+            <string>if (self.x &gt; 450)
 {
     self.x -= 5;
 }
