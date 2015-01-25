@@ -3,7 +3,7 @@
   <spriteName>spr_cloud</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>21</depth>
+  <depth>-20</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -130,7 +130,7 @@ y = yOrigin + global.offset;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>random(500)</string>
+            <string>random(500)+300</string>
           </argument>
         </arguments>
       </action>

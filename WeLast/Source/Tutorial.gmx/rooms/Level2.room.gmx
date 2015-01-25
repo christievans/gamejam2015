@@ -67,11 +67,11 @@
     <instance objName="obj_lv2_oceanTrans" x="2" y="1360" name="inst_CC28180E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lv2_ShipParent" x="32" y="0" name="inst_29048F57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lv2_controller" x="1" y="2" name="inst_1C450BE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lv2_cloud" x="160" y="160" name="inst_1BC872ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lv2_cloud" x="862" y="520" name="inst_6041FC10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lv2_cloud" x="3552" y="416" name="inst_8841B4E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lv2_cloud" x="2458" y="254" name="inst_F755489F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lv2_cloud" x="1492" y="244" name="inst_3C735752" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lv2_cloud" x="52" y="500" name="inst_1BC872ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lv2_cloud" x="774" y="698" name="inst_6041FC10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lv2_cloud" x="3384" y="748" name="inst_8841B4E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lv2_cloud" x="2702" y="520" name="inst_F755489F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lv2_cloud" x="1712" y="460" name="inst_3C735752" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_camera_dummy" x="64" y="0" name="inst_3BC64732" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
