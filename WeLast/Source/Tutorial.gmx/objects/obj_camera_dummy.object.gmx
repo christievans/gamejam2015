@@ -49,8 +49,14 @@ self.y = obj_lv2_player.y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.x = obj_lv2_player.x;
-self.y = obj_lv2_player.y + global.offset;
+            <string>var index=0;
+if(!global.isServer)
+    index = 1;
+    
+p = instance_find(obj_lv2_player,index);
+
+self.x = p.x;
+self.y = p.y + global.offset;
 </string>
           </argument>
         </arguments>
