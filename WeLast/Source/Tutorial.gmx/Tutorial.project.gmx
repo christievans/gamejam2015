@@ -103,6 +103,7 @@
       <object>objects\obj_explosion</object>
       <object>objects\obj_controller12</object>
       <object>objects\obj_iceberg_2</object>
+      <object>objects\obj_iceberg_2_animated</object>
     </objects>
     <objects name="Level13">
       <object>objects\obj_bucket_control</object>
@@ -136,10 +137,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Level2</room>
+    <room>rooms\Level11</room>
     <room>rooms\Level13</room>
     <room>rooms\Level12</room>
-    <room>rooms\Level11</room>
+    <room>rooms\Level2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -127,7 +127,7 @@ if (instance_exists(ServerClient) == false){
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>-100</sound>
+            <sound>snd_background1</sound>
           </argument>
           <argument>
             <kind>3</kind>
