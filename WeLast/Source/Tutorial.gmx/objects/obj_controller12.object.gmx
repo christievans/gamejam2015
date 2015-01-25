@@ -155,7 +155,7 @@ SocketList = ds_list_create();
             <kind>1</kind>
             <string>if ( not instance_exists(obj_island))
 {
-    instance_create(-100,300,obj_iceburg);
+    instance_create(-100,300,obj_iceberg_2);
     alarm[2] = random(60) + 280;
 }
 </string>
