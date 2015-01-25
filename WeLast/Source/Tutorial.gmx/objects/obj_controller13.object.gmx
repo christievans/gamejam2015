@@ -320,28 +320,7 @@ if (global.dist &gt; 100 and not instance_exists(obj_island) and not instance_ex
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Async Networking Event of Object: ObjServer
-var type_event = ds_map_find_value( async_load , "type" );
-switch( type_event ) {
- case network_type_connect:
- var socket = ds_map_find_value( async_load , "socket" );
- ds_list_add( SocketList , socket );
- break;
- case network_type_disconnect:
- var socket = ds_map_find_value( async_load , "socket" );
- var findsocket = ds_list_find_index( SocketList , socket );
- if ( findsocket &gt;= 0 ) {
- ds_list_delete( SocketList , findsocket );
- }
- break;
- case network_type_data:
- var buffer = ds_map_find_value( async_load , "buffer" );
- var socket = ds_map_find_value( async_load , "id" );
- buffer_seek( buffer , buffer_seek_start , 0 );
- ReceivedPacket( buffer , socket );
- break;
-}
-
+            <string>asyncAction();
 </string>
           </argument>
         </arguments>

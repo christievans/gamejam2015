@@ -63,7 +63,13 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\ReceivedPacket.gml</script>
+    <script>scripts\clientAsync.gml</script>
+    <script>scripts\clientReceivedPacket.gml</script>
+    <script>scripts\send.gml</script>
+    <script>scripts\serverAsync.gml</script>
+    <script>scripts\serverReceivedPacket.gml</script>
+    <script>scripts\asyncAction.gml</script>
+    <script>scripts\objectType.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Level 11">
