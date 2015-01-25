@@ -11,9 +11,5 @@ switch( msgid ) {
  buffer_write( Buffer , buffer_u32 , time );
  network_send_packet( socket , Buffer , buffer_tell( Buffer ) );
  break;
- 
- case 2:
- var x = buffer_read( buffer, buffer_u8 );
- var y = buffer_read( buffer, buffer_u8 );
- break;
+
 }
