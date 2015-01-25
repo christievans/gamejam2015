@@ -12,6 +12,8 @@
     <sound>sound\snd_oars</sound>
     <sound>sound\snd_background1</sound>
     <sound>sound\snd_oh_no</sound>
+    <sound>sound\snd_we_safe</sound>
+    <sound>sound\snd_fail</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_cloud</sprite>
@@ -28,6 +30,8 @@
     <sprite>sprites\spr_bucket_water_done</sprite>
     <sprite>sprites\spr_iceburg</sprite>
     <sprite>sprites\spr_game_over</sprite>
+    <sprite>sprites\spr_you_win</sprite>
+    <sprite>sprites\spr_island</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_sea</background>
@@ -49,6 +53,8 @@
     <object>objects\obj_bucket</object>
     <object>objects\obj_iceburg</object>
     <object>objects\obj_game_over</object>
+    <object>objects\obj_island</object>
+    <object>objects\obj_you_win</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level1</room>
