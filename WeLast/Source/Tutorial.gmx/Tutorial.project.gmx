@@ -58,6 +58,9 @@
       <sprite>sprites\spr_lv2_shipback</sprite>
       <sprite>sprites\spr_lv2_noncollision</sprite>
       <sprite>sprites\spr_lv2_fishnet</sprite>
+      <sprite>sprites\spr_lv2_engine</sprite>
+      <sprite>sprites\spr_lv2_fishgrinder</sprite>
+      <sprite>sprites\spr_lv2_pump</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -112,6 +115,8 @@
       <object>objects\obj_lv2_floor</object>
       <object>objects\obj_lv2_player</object>
       <object>objects\obj_lv2_fishnet</object>
+      <object>objects\obj_lv2_engine</object>
+      <object>objects\obj_lv2_fishgrinder</object>
     </objects>
     <object>objects\ServerClient</object>
   </objects>
