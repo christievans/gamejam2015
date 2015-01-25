@@ -1,15 +1,21 @@
 //Server Script : ReceivedPacket
 var buffer = argument[ 0 ];
-var socket = argument[ 1 ];
 var msgid = buffer_read( buffer , buffer_u8 );
 
 switch( msgid ) {
- case 1:
- var time = buffer_read( buffer , buffer_u32 );
- buffer_seek( Buffer , buffer_seek_start , 0 );
- buffer_write( Buffer , buffer_u8 , 1 );
- buffer_write( Buffer , buffer_u32 , time );
- network_send_packet( socket , Buffer , buffer_tell( Buffer ) );
+// case 1:
+// var time = buffer_read( buffer , buffer_u32 );
+// var Ping = current_time - time;
+// break;
+ case ids.PLAYER1_POS:
+    if (instance_exists(obj_player) == true){
+        obj_player.x = buffer_read(buffer, buffer_s32);
+        obj_player.y = buffer_read(buffer, buffer_s32);
+    } else if (instance_exists(obj_lv2_player) == true){
+        // Client is sending us their location
+        p1 = instance_find(obj_lv2_player,1);
+        p1.x = buffer_read(buffer, buffer_s32);
+        p1.y = buffer_read(buffer, buffer_s32);
+    }
  break;
-
-}
+ }

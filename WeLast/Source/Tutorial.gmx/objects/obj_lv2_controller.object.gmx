@@ -36,7 +36,8 @@ if (instance_exists(ServerClient) == false){
 }
 
 if((global.isServer &amp;&amp; ds_list_size(ServerClient.SocketList) &gt; 0) || !global.isServer) {
-    instance_create(2432,480,obj_lv2_player);
+    p2 = instance_create(2432,480,obj_lv2_player);
+    p2.isServerPlayer = false;
 }
 </string>
           </argument>

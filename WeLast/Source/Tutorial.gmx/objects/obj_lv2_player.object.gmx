@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>ladder = false;
+isServerPlayer=true
 </string>
           </argument>
         </arguments>
@@ -60,22 +61,26 @@
            gravity = 0; 
            gravity_direction = 270;
      } 
-              
-     if place_free(x-10,y) and keyboard_check(vk_left)
-     {
-         x -= 10;
-         sprite_index = spr_lv2_player;
-     } 
-     
-     if place_free(x+10,y)and keyboard_check(vk_right)
-     {
-         x += 10;
-         sprite_index = spr_lv2_player_right;
-     } 
-     
-     if !place_free(x,y+1) and keyboard_check(vk_up)
-     {
-        vspeed=-15
+        
+     if (global.isServer == isServerPlayer){
+           
+         if place_free(x-10,y) and keyboard_check(vk_left)
+         {
+             x -= 10;
+             sprite_index = spr_lv2_player;
+         } 
+         
+         if place_free(x+10,y)and keyboard_check(vk_right)
+         {
+             x += 10;
+             sprite_index = spr_lv2_player_right;
+         } 
+         
+         if !place_free(x,y+1) and keyboard_check(vk_up)
+         {
+            vspeed=-15
+         }
+         send(ids.PLAYER1_POS, self.x, self.y);
     }
 }
 
