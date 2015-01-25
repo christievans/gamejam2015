@@ -29,7 +29,9 @@
 image_speed = .5;
 direction = 0;
 speed = 7+random(5)+global.vel;
+xOrigin = x;
 yOrigin = y;
+hitNet = false;
 </string>
           </argument>
         </arguments>
@@ -52,8 +54,38 @@ yOrigin = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 3+rand+global.vel;
-y = yOrigin + global.offset;
+            <string>if not hitNet {
+    speed = 3+rand+global.vel;
+    x = xOrigin + speed;
+    y = yOrigin + global.offset;
+}
+else {
+    speed = 0;
+    y = yOrigin + global.offset - 25;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_lv2_fishnet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hitNet = true;
 </string>
           </argument>
         </arguments>

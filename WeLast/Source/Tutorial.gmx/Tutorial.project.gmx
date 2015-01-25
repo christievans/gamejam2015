@@ -37,15 +37,8 @@
       <sprite>sprites\spr_gun_control</sprite>
       <sprite>sprites\spr_oars_control</sprite>
       <sprites name="iceberg">
-        <sprite>sprites\sprite24</sprite>
-        <sprite>sprites\sprite25</sprite>
-        <sprite>sprites\sprite26</sprite>
-        <sprite>sprites\sprite27</sprite>
-        <sprite>sprites\sprite28</sprite>
-        <sprite>sprites\sprite29</sprite>
-        <sprite>sprites\sprite30</sprite>
-        <sprite>sprites\sprite31</sprite>
-        <sprite>sprites\sprite32</sprite>
+        <sprite>sprites\spr_iceberg_2</sprite>
+        <sprite>sprites\spr_iceberg_2_animated</sprite>
       </sprites>
     </sprites>
     <sprites name="Level 2">
@@ -71,6 +64,13 @@
       <sprite>sprites\spr_lv2_disable</sprite>
       <sprite>sprites\spr_lv2_launcher</sprite>
       <sprite>sprites\spr_lv2_missile</sprite>
+    </sprites>
+    <sprites name="Menu">
+      <sprite>sprites\spr_menu</sprite>
+      <sprite>sprites\spr_new_game</sprite>
+      <sprite>sprites\spr_options</sprite>
+      <sprite>sprites\spr_quit</sprite>
+      <sprite>sprites\spr_credits</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -115,13 +115,13 @@
       <object>objects\obj_controller12</object>
       <object>objects\obj_iceberg_2</object>
       <object>objects\obj_you_lose</object>
+      <object>objects\obj_iceberg_2_animated</object>
     </objects>
     <objects name="Level13">
       <object>objects\obj_bucket_control</object>
       <object>objects\obj_bucket</object>
       <object>objects\obj_controller13</object>
     </objects>
-    <object>objects\ServerClient</object>
     <objects name="Level 2">
       <object>objects\obj_lv2_controller</object>
       <object>objects\obj_lv2_ShipParent</object>
@@ -148,12 +148,22 @@
       <object>objects\obj_lv2_launcher</object>
       <object>objects\obj_lv2_missile</object>
     </objects>
+    <objects name="Menu">
+      <object>objects\obj_menu</object>
+      <object>objects\obj_new_game</object>
+      <object>objects\obj_options</object>
+      <object>objects\obj_quit</object>
+      <object>objects\obj_credits</object>
+    </objects>
+    <object>objects\ServerClient</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Level2</room>
+    <room>rooms\Menu</room>
     <room>rooms\Level11</room>
     <room>rooms\Level12</room>
     <room>rooms\Level13</room>
+    <room>rooms\Level2</room>
+    <room>rooms\Credits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
