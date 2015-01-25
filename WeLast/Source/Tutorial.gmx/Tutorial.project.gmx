@@ -66,6 +66,7 @@
       <sprite>sprites\spr_lv2_fish</sprite>
       <sprite>sprites\spr_narwhal</sprite>
       <sprite>sprites\spr_lv2_oceanTrans</sprite>
+      <sprite>sprites\sprite45</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -134,6 +135,7 @@
       <object>objects\obj_lv2_fish</object>
       <object>objects\obj_lv2_narwhal</object>
       <object>objects\obj_lv2_cloud</object>
+      <object>objects\obj_camera_dummy</object>
     </objects>
   </objects>
   <rooms name="rooms">

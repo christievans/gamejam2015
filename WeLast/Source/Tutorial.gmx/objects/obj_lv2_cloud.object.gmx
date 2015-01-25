@@ -130,7 +130,7 @@ y = yOrigin + global.offset;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>random(200)</string>
+            <string>random(500)</string>
           </argument>
         </arguments>
       </action>

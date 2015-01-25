@@ -170,7 +170,7 @@ if((global.isServer &amp;&amp; ds_list_size(ServerClient.SocketList) &gt; 0) || 
           </argument>
           <argument>
             <kind>0</kind>
-            <string>random(600)+1300</string>
+            <string>random(600)+1870</string>
           </argument>
         </arguments>
       </action>
