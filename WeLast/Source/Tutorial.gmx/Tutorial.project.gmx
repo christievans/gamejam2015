@@ -102,13 +102,13 @@
       <object>objects\obj_controller12</object>
       <object>objects\obj_iceberg_2</object>
       <object>objects\obj_you_lose</object>
+      <object>objects\obj_iceberg_2_animated</object>
     </objects>
     <objects name="Level13">
       <object>objects\obj_bucket_control</object>
       <object>objects\obj_bucket</object>
       <object>objects\obj_controller13</object>
     </objects>
-    <object>objects\ServerClient</object>
     <objects name="Level 2">
       <object>objects\obj_lv2_controller</object>
       <object>objects\obj_lv2_ShipParent</object>
@@ -131,13 +131,13 @@
       <object>objects\obj_lv2_cloud</object>
       <object>objects\obj_camera_dummy</object>
     </objects>
-    <object>objects\obj_iceberg_2_animated</object>
+    <object>objects\ServerClient</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Level2</room>
     <room>rooms\Level11</room>
     <room>rooms\Level12</room>
     <room>rooms\Level13</room>
-    <room>rooms\Level2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
