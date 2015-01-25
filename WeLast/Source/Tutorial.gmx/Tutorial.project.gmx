@@ -61,6 +61,13 @@
       <sprite>sprites\spr_lv2_oceanTrans</sprite>
       <sprite>sprites\sprite45</sprite>
     </sprites>
+    <sprites name="Menu">
+      <sprite>sprites\spr_menu</sprite>
+      <sprite>sprites\spr_new_game</sprite>
+      <sprite>sprites\spr_options</sprite>
+      <sprite>sprites\spr_quit</sprite>
+      <sprite>sprites\spr_credits</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_sea</background>
@@ -102,13 +109,13 @@
       <object>objects\obj_controller12</object>
       <object>objects\obj_iceberg_2</object>
       <object>objects\obj_you_lose</object>
+      <object>objects\obj_iceberg_2_animated</object>
     </objects>
     <objects name="Level13">
       <object>objects\obj_bucket_control</object>
       <object>objects\obj_bucket</object>
       <object>objects\obj_controller13</object>
     </objects>
-    <object>objects\ServerClient</object>
     <objects name="Level 2">
       <object>objects\obj_lv2_controller</object>
       <object>objects\obj_lv2_ShipParent</object>
@@ -131,13 +138,22 @@
       <object>objects\obj_lv2_cloud</object>
       <object>objects\obj_camera_dummy</object>
     </objects>
-    <object>objects\obj_iceberg_2_animated</object>
+    <objects name="Menu">
+      <object>objects\obj_menu</object>
+      <object>objects\obj_new_game</object>
+      <object>objects\obj_options</object>
+      <object>objects\obj_quit</object>
+      <object>objects\obj_credits</object>
+    </objects>
+    <object>objects\ServerClient</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Menu</room>
     <room>rooms\Level11</room>
     <room>rooms\Level12</room>
     <room>rooms\Level13</room>
     <room>rooms\Level2</room>
+    <room>rooms\Credits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
