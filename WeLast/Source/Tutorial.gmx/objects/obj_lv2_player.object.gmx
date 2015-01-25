@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>if (keyboard_check(vk_up))
-    self.y -= 5;
+    self.y -= 10;
 else if (keyboard_check(vk_up))
-    self.y += 5;
+    self.y += 10;
 
 </string>
           </argument>
@@ -52,7 +52,7 @@ else if (keyboard_check(vk_up))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.x += 5;
+            <string>self.x += 10;
 </string>
           </argument>
         </arguments>
@@ -75,7 +75,7 @@ else if (keyboard_check(vk_up))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.x -= 5
+            <string>self.x -= 10
 </string>
           </argument>
         </arguments>
