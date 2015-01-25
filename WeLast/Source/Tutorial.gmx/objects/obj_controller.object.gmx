@@ -31,6 +31,10 @@ global.sink = 0;
 global.sink_total = 0;
 t = 0;
 
+//Create Event of Object: ObjServer
+Server = network_create_server( network_socket_tcp , 63258 , 32 );
+Buffer = buffer_create( 1024 , buffer_fixed , 1 );
+SocketList = ds_list_create();
 </string>
           </argument>
         </arguments>
