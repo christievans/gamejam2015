@@ -45,6 +45,7 @@
     <background>background\bk_sea</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <objects name="objects">
     <objects name="Level 1">
       <object>objects\obj_island</object>
