@@ -10,4 +10,8 @@ enum ids {
 enum actions {
     NEXT_LEVEL,
     FIRE_CANNON
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> origin/develop

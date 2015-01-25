@@ -91,7 +91,7 @@ ladder = false;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_lv2_pump">
+    <event eventtype="4" ename="obj_bottom_door">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -109,7 +109,7 @@ ladder = false;
           <argument>
             <kind>1</kind>
             <string>move_contact_solid(direction,12);
- hspeed=0;
+ vspeed=0;
 </string>
           </argument>
         </arguments>

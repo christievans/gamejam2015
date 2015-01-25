@@ -127,7 +127,7 @@ if (instance_exists(ServerClient) == false){
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>-100</sound>
+            <sound>snd_background1</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -281,7 +281,7 @@ if (instance_exists(obj_paddle) == true)
 if (instance_exists(obj_bucket) == true)
     obj_bucket.y = obj_boat.y + 14;    
     
-if (global.dist &gt; 40 and not instance_exists(obj_island) and not instance_exists(obj_game_over))
+if (global.dist &gt; 200 and not instance_exists(obj_island) and not instance_exists(obj_game_over))
     instance_create(-290,200,obj_island);
 
 </string>
@@ -322,10 +322,10 @@ if (global.dist &gt; 40 and not instance_exists(obj_island) and not instance_exi
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50,60,"Distance: "+string(global.dist));
+            <string>/*draw_text(50,60,"Distance: "+string(global.dist));
 draw_text(50,80,"Velocity: "+string(global.vel));
 draw_text(50,100,"Sink: "+string(global.sink));
-draw_text(50,120,"Sink Total: "+string(global.sink_total));
+draw_text(50,120,"Sink Total: "+string(global.sink_total));*/
 </string>
           </argument>
         </arguments>
