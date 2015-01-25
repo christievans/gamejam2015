@@ -148,10 +148,11 @@ t = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if ( not instance_exists(obj_island))
+            <string>if ( not instance_exists(obj_island) &amp;&amp; global.isServer == true)
 {
     instance_create(-100,300,obj_iceberg_2);
     alarm[2] = random(60) + 280;
+    send(ids.ICEBERG,-100,300)
 }
 </string>
           </argument>

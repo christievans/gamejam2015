@@ -75,6 +75,7 @@
     <script>scripts\serverReceivedPacket.gml</script>
     <script>scripts\asyncAction.gml</script>
     <script>scripts\objectType.gml</script>
+    <script>scripts\nextLevel.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Level 11">

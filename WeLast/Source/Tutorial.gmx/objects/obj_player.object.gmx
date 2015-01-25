@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (self.x &lt; 750)
+            <string>if (self.x &lt; 750 &amp;&amp; global.isServer)
 {
     self.x += 5;
     send(ids.PLAYER1_POS, self.x, self.y);
@@ -53,7 +53,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (self.x &gt; 450)
+            <string>if (self.x &gt; 450 &amp;&amp; global.isServer)
 {
     self.x -= 5;
     send(ids.PLAYER1_POS, self.x, self.y);
