@@ -37,15 +37,8 @@
       <sprite>sprites\spr_gun_control</sprite>
       <sprite>sprites\spr_oars_control</sprite>
       <sprites name="iceberg">
-        <sprite>sprites\sprite24</sprite>
-        <sprite>sprites\sprite25</sprite>
-        <sprite>sprites\sprite26</sprite>
-        <sprite>sprites\sprite27</sprite>
-        <sprite>sprites\sprite28</sprite>
-        <sprite>sprites\sprite29</sprite>
-        <sprite>sprites\sprite30</sprite>
-        <sprite>sprites\sprite31</sprite>
-        <sprite>sprites\sprite32</sprite>
+        <sprite>sprites\spr_iceberg_2</sprite>
+        <sprite>sprites\spr_iceber_2_still</sprite>
       </sprites>
     </sprites>
     <sprites name="Level 2">
@@ -140,9 +133,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Level2</room>
-    <room>rooms\Level11</room>
-    <room>rooms\Level12</room>
     <room>rooms\Level13</room>
+    <room>rooms\Level12</room>
+    <room>rooms\Level11</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

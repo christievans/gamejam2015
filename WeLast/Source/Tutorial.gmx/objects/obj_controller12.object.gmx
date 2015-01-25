@@ -30,6 +30,10 @@ global.vel = 0;
 global.sink = 0;
 global.sink_total = 0;
 t = 0;
+
+if (instance_exists(ServerClient) == false){
+    instance_create(0, 0, ServerClient);
+}
 </string>
           </argument>
         </arguments>
@@ -275,7 +279,7 @@ if (instance_exists(obj_bucket) == true)
     obj_bucket.y += offset;
     
     
-if (global.dist &gt; 150 and not instance_exists(obj_island) and not instance_exists(obj_game_over))
+if (global.dist &gt; 200 and not instance_exists(obj_island) and not instance_exists(obj_game_over))
     instance_create(-290,200,obj_island);
 
 </string>
@@ -316,10 +320,10 @@ if (global.dist &gt; 150 and not instance_exists(obj_island) and not instance_ex
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50,60,"Distance: "+string(global.dist));
+            <string>/*draw_text(50,60,"Distance: "+string(global.dist));
 draw_text(50,80,"Velocity: "+string(global.vel));
 draw_text(50,100,"Sink: "+string(global.sink));
-draw_text(50,120,"Sink Total: "+string(global.sink_total));
+draw_text(50,120,"Sink Total: "+string(global.sink_total));*/
 </string>
           </argument>
         </arguments>
