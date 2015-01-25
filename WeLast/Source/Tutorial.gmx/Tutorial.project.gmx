@@ -38,7 +38,7 @@
       <sprite>sprites\spr_oars_control</sprite>
       <sprites name="iceberg">
         <sprite>sprites\spr_iceberg_2</sprite>
-        <sprite>sprites\spr_iceber_2_still</sprite>
+        <sprite>sprites\spr_iceberg_2_animated</sprite>
       </sprites>
     </sprites>
     <sprites name="Level 2">

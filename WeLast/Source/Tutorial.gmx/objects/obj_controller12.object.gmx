@@ -261,8 +261,6 @@ offset = sin(0.07*t)*.3 + global.sink;
     
 t += 1;
 
-
-
 if (instance_exists(obj_player) == true)
     obj_player.y += offset;
 
@@ -279,7 +277,7 @@ if (instance_exists(obj_bucket) == true)
     obj_bucket.y += offset;
     
     
-if (global.dist &gt; 200 and not instance_exists(obj_island) and not instance_exists(obj_game_over))
+if (global.dist &gt; 300 and not instance_exists(obj_island) and not instance_exists(obj_game_over))
     instance_create(-290,200,obj_island);
 
 </string>
