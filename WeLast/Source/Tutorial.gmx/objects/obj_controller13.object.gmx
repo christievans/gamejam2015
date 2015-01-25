@@ -260,7 +260,10 @@ offset = sin(0.07*t)*.3 + global.sink;
     
 t += 1;
 
-
+if(global.sink_total &gt; 100) {
+    if(not instance_exists(obj_you_lose))
+        instance_create(obj_you_lose);
+}
 
 if (instance_exists(obj_player) == true)
     obj_player.y += offset;
