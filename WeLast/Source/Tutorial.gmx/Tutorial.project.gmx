@@ -136,8 +136,8 @@
   <rooms name="rooms">
     <room>rooms\Level11</room>
     <room>rooms\Level12</room>
-    <room>rooms\Level2</room>
     <room>rooms\Level13</room>
+    <room>rooms\Level2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

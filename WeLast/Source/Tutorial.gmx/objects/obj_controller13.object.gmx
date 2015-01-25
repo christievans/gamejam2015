@@ -262,7 +262,7 @@ t += 1;
 
 if(global.sink_total &gt; 100) {
     if(not instance_exists(obj_you_lose))
-        instance_create(obj_you_lose);
+        instance_create(0, 0, obj_you_lose);
 }
 
 if (instance_exists(obj_player) == true)
