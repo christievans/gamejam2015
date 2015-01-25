@@ -71,6 +71,7 @@
       <object>objects\obj_gun_control</object>
       <object>objects\obj_oars_control</object>
       <object>objects\obj_explosion</object>
+      <object>objects\obj_player2</object>
     </objects>
     <objects name="Level 2">
       <object>objects\obj_lv2_boat</object>
