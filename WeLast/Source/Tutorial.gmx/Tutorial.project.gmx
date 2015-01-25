@@ -45,6 +45,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bk_sea</background>
+    <background>background\bk_ship</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -76,8 +77,8 @@
     <objects name="Level 2">
       <object>objects\obj_lv2_boat</object>
       <object>objects\obj_lv2_player</object>
+      <object>objects\obj_lv2_window</object>
     </objects>
-    <object>objects\obj_floor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level2</room>
