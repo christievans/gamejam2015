@@ -64,6 +64,7 @@
       <sprite>sprites\spr_lv2_disable</sprite>
       <sprite>sprites\spr_lv2_launcher</sprite>
       <sprite>sprites\spr_lv2_missile</sprite>
+      <sprite>sprites\spr_lv2_fish_belt</sprite>
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\spr_menu</sprite>
@@ -148,6 +149,7 @@
       <object>objects\obj_lv2_disable</object>
       <object>objects\obj_lv2_launcher</object>
       <object>objects\obj_lv2_missile</object>
+      <object>objects\obj_lv2_fish_belt</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_menu</object>
