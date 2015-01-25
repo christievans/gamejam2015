@@ -81,6 +81,7 @@
     <script>scripts\asyncAction.gml</script>
     <script>scripts\objectType.gml</script>
     <script>scripts\nextLevel.gml</script>
+    <script>scripts\clientReceivedAction.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Level 11">
@@ -112,6 +113,7 @@
       <object>objects\obj_bucket</object>
       <object>objects\obj_controller13</object>
     </objects>
+    <object>objects\ServerClient</object>
     <objects name="Level 2">
       <object>objects\obj_lv2_controller</object>
       <object>objects\obj_lv2_ShipParent</object>
@@ -133,7 +135,6 @@
       <object>objects\obj_lv2_narwhal</object>
       <object>objects\obj_lv2_cloud</object>
     </objects>
-    <object>objects\ServerClient</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level2</room>

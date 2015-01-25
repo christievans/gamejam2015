@@ -3,5 +3,11 @@ enum ids {
     PLAYER2_POS,
     BOAT_POS,
     ICEBERG,
-    NEXT
+    ACTION
 };
+
+enum actions {
+    NEXT_LEVEL,
+    FIRE_CANNON
+};
+

@@ -6,6 +6,9 @@ switch( type_event ) {
     var socket = ds_map_find_value( async_load , "socket" );
     ds_list_add( SocketList , socket );
     global.player2Connected = true;
+    // Client connected on level 2, create them
+    if (instance_exists(obj_lv2_player) == true)
+         instance_create(2432,480,obj_lv2_player);
  break;
  case network_type_disconnect:
     var socket = ds_map_find_value( async_load , "socket" );

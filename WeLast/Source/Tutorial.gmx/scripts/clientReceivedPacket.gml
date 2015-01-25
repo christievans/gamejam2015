@@ -8,8 +8,13 @@ switch( msgid ) {
 // var Ping = current_time - time;
 // break;
  case ids.PLAYER1_POS:
-    obj_player.x = buffer_read(buffer, buffer_s32);
-    obj_player.y = buffer_read(buffer, buffer_s32);
+    if (instance_exists(obj_player) == true){
+        obj_player.x = buffer_read(buffer, buffer_s32);
+        obj_player.y = buffer_read(buffer, buffer_s32);
+    } else if (instance_exists(obj_lv2_player) == true){
+        obj_lv2_player.x = buffer_read(buffer, buffer_s32);
+        obj_lv2_player.y = buffer_read(buffer, buffer_s32);
+    }
  break;
  case ids.BOAT_POS:
     obj_boat.x = buffer_read(buffer, buffer_s32);
@@ -21,7 +26,8 @@ switch( msgid ) {
     instance_create(icex,icey, obj_iceberg_2);
     //instance_create(-100,300,obj_iceberg_2);
  break;
- case ids.NEXT:
-    room_goto_next();
+ case ids.ACTION:
+    clientReceivedAction();
+    //room_goto_next();
  break;
 }

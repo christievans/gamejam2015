@@ -50,36 +50,33 @@
             <kind>1</kind>
             <string> if (ladder == false)
  {
- 
- if place_free(x,y+1)
- { 
- gravity = 2;
- gravity_direction = 270;
-  }
-   else 
-   { 
-   gravity = 0; 
-   gravity_direction = 270;
-    } 
-    
-     
-     
+     if place_free(x,y+1)
+     { 
+         gravity = 2;
+         gravity_direction = 270;
+     }
+     else 
+     { 
+           gravity = 0; 
+           gravity_direction = 270;
+     } 
+              
      if place_free(x-10,y) and keyboard_check(vk_left)
      {
-     x -= 10;
-     sprite_index = spr_lv2_player;
+         x -= 10;
+         sprite_index = spr_lv2_player;
      } 
      
      if place_free(x+10,y)and keyboard_check(vk_right)
      {
-     x += 10;
-     sprite_index = spr_lv2_player_right;
+         x += 10;
+         sprite_index = spr_lv2_player_right;
      } 
      
      if !place_free(x,y+1) and keyboard_check(vk_up)
      {
-     vspeed=-15
-     }
+        vspeed=-15
+    }
 }
 
 ladder = false;

@@ -31,6 +31,13 @@ global.offset = 0;
 
 t = 0;
 
+if (instance_exists(ServerClient) == false){
+    instance_create(0, 0, ServerClient);
+}
+
+if((global.isServer &amp;&amp; ds_list_size(ServerClient.SocketList) &gt; 0) || !global.isServer) {
+    instance_create(2432,480,obj_lv2_player);
+}
 </string>
           </argument>
         </arguments>
