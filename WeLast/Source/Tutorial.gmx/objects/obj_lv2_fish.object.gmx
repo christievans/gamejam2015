@@ -29,6 +29,7 @@
 image_speed = .5;
 direction = 0;
 speed = 7+random(5)+global.vel;
+xOrigin = x;
 yOrigin = y;
 hitNet = false;
 </string>
@@ -55,11 +56,12 @@ hitNet = false;
             <kind>1</kind>
             <string>if not hitNet {
     speed = 3+rand+global.vel;
+    x = xOrigin + speed;
     y = yOrigin + global.offset;
 }
 else {
-    speed = 1;
-    y = yOrigin + global.offset - 10;
+    speed = 0;
+    y = yOrigin + global.offset - 25;
 }
 </string>
           </argument>
