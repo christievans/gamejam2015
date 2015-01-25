@@ -67,6 +67,7 @@
       <sprite>sprites\spr_options</sprite>
       <sprite>sprites\spr_quit</sprite>
       <sprite>sprites\spr_credits</sprite>
+      <sprite>sprites\spr_inside_credits</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -144,6 +145,7 @@
       <object>objects\obj_options</object>
       <object>objects\obj_quit</object>
       <object>objects\obj_credits</object>
+      <object>objects\obj_inside_credits</object>
     </objects>
     <object>objects\ServerClient</object>
   </objects>
