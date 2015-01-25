@@ -58,7 +58,6 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bk_sea</background>
-    <background>background\bk_ship</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -103,9 +102,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Level13</room>
     <room>rooms\Level12</room>
     <room>rooms\Level11</room>
-    <room>rooms\Level13</room>
     <room>rooms\Level2</room>
   </rooms>
   <help>
