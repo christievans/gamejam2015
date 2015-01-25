@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>obj_oars_control.visible = false;
 
-if (self.y &gt; 550)
+if (self.y &gt; 600)
     instance_destroy();
 </string>
           </argument>
