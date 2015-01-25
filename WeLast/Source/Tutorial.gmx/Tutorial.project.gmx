@@ -40,7 +40,7 @@
     <sprites name="Level 2">
       <sprite>sprites\spr_lv2_boat</sprite>
       <sprite>sprites\spr_lv2_player</sprite>
-      <sprite>sprites\spr_floor</sprite>
+      <sprite>sprites\spr_windows</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -72,11 +72,11 @@
       <object>objects\obj_oars_control</object>
       <object>objects\obj_explosion</object>
     </objects>
-    <objects name="Level2">
+    <objects name="Level 2">
       <object>objects\obj_lv2_boat</object>
       <object>objects\obj_lv2_player</object>
-      <object>objects\obj_floor</object>
     </objects>
+    <object>objects\obj_floor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level2</room>
