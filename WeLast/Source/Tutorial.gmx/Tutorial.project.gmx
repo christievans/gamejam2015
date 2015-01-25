@@ -158,11 +158,11 @@
     <object>objects\ServerClient</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Level2</room>
     <room>rooms\Menu</room>
     <room>rooms\Level11</room>
     <room>rooms\Level12</room>
     <room>rooms\Level13</room>
-    <room>rooms\Level2</room>
     <room>rooms\Credits</room>
   </rooms>
   <help>

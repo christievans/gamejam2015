@@ -186,7 +186,9 @@ else
     global.lockdown = false;
 
     
-    //-350 lose
+if global.offset &lt; -350
+    instance_create(obj_lv2_player.x,obj_lv2_player.y-150,obj_game_over);
+    
     
 </string>
           </argument>
