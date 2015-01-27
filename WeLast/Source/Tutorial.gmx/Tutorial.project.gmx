@@ -14,6 +14,7 @@
     <sound>sound\snd_oh_no</sound>
     <sound>sound\snd_we_safe</sound>
     <sound>sound\snd_fail</sound>
+    <sound>sound\snd_splash</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Level 11">
@@ -91,6 +92,7 @@
     <script>scripts\objectType.gml</script>
     <script>scripts\nextLevel.gml</script>
     <script>scripts\clientReceivedAction.gml</script>
+    <script>scripts\playBackgroundMusic.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Level 11">

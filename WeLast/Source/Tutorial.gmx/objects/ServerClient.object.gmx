@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.isServer = true;
+            <string>playBackgroundMusic();
+
+global.isServer = true;
 global.player2Connected = false;
 
 //Create Event of Object: ObjServer
