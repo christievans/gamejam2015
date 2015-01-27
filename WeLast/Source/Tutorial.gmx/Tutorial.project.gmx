@@ -9,12 +9,11 @@
     <sound>sound\snd_bullet</sound>
     <sound>sound\snd_bucket</sound>
     <sound>sound\snd_iceberg_hitship</sound>
-    <sound>sound\snd_oars</sound>
     <sound>sound\snd_background1</sound>
     <sound>sound\snd_oh_no</sound>
     <sound>sound\snd_we_safe</sound>
     <sound>sound\snd_fail</sound>
-    <sound>sound\snd_splash</sound>
+    <sound>sound\snd_swish</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Level 11">

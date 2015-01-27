@@ -89,8 +89,8 @@ if (keyboard_check_pressed(ord('W')) and prep == true)
     
     if(global.vel &lt; 30)
         global.vel += 1;
-    if (not sound_isplaying(snd_splash))    
-        audio_play_sound(snd_splash,0,false);
+    if (not sound_isplaying(snd_swish))    
+        audio_play_sound(snd_swish,0,false);
 }
     
 </string>
