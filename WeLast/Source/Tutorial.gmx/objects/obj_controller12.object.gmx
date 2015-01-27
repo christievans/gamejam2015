@@ -128,7 +128,7 @@ t = 0;
             <string>//spawns iceberg if server and sends to client
 if ( not instance_exists(obj_island) &amp;&amp; global.isServer == true)
 {
-    instance_create(-100,300,obj_iceberg_2);
+    instance_create(-100,300,obj_iceberg);
     alarm[2] = random(60) + 280;
     send(ids.ICEBERG,-100,300)
 }

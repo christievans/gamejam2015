@@ -24,7 +24,7 @@ switch( msgid ) {
  case ids.ICEBERG:
     icex = buffer_read(buffer, buffer_s32);
     icey = buffer_read(buffer, buffer_s32);
-    instance_create(icex,icey, obj_iceberg_2);
+    instance_create(icex,icey, obj_iceberg);
     //instance_create(-100,300,obj_iceberg_2);
  break;
  case ids.NARWHAL:

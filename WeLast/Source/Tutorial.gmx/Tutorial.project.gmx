@@ -113,12 +113,11 @@
       <object>objects\obj_gun</object>
       <object>objects\obj_bullet</object>
       <object>objects\obj_gun_control</object>
-      <object>objects\obj_iceburg</object>
       <object>objects\obj_explosion</object>
       <object>objects\obj_controller12</object>
-      <object>objects\obj_iceberg_2</object>
+      <object>objects\obj_iceberg</object>
       <object>objects\obj_you_lose</object>
-      <object>objects\obj_iceberg_2_animated</object>
+      <object>objects\obj_iceberg_animated</object>
     </objects>
     <objects name="Level13">
       <object>objects\obj_bucket_control</object>
